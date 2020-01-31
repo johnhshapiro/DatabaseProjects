@@ -1,5 +1,5 @@
-# Database-Projects
-Various database projects I completed while taking the course Principles of Database Systems during the Fall 2019 Semester at Metropolitan State University of Denver
+# DatabaseProjects
+*Various database projects I completed while taking the course Principles of Database Systems during the Fall 2019 Semester at Metropolitan State University of Denver*
 
 ## Dataset Parsing: SQL
 This project builds a relational database in SQL from [this dataset](https://data.cms.gov/Medicare/Inpatient-Prospective-Payment-System-IPPS-Provider/mjeb-it4m).
