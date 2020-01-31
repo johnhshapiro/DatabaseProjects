@@ -13,6 +13,6 @@ This project demonstrates the use of various types of SQL queries to find specif
 This homework includes examples of MongoDB queries that would be used with the included data set (companies.json)
 
 ## Dataset Analysis: Neo4j
-This project loads a dataset of genetically connected diseases into Neo4j and demonstrates how data can be exported, parsed, grouped, and labelled in order to visualize data and create hypotheses.
+This project loads a dataset ([found here](https://github.com/MIBlab-MUN/vertex-centrality-DILW)) of genetically connected diseases into Neo4j and demonstrates how data can be exported, parsed, grouped, and labelled in order to visualize data and create hypotheses.
 A Python script is used to create a parse, group, and label data and output a cypher that can be used to enter the grouped communities into Neo4j.
 For this project, a text file with a hypothesis about one of the communities (selected by the student) was required as a deliverable. I have included my hypothesis to show how Neo4j community data can be applied.
