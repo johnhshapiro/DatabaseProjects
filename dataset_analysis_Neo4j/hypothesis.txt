@@ -1,0 +1,56 @@
+CS 3810 - Principles of Database Systems
+Fall 2019
+DB Assignment 04
+Author: John Shapiro
+
+This is a short analysis of a group of potentially genetically connected
+diseases based on linked communities found using tools available in Neo4j.
+-------------------------------------------------------------------------------
+
+I chose community "c10" from my groupings. Using the the cypher query
+
+    match(n:c10) return(n.name)
+
+yields a list of the disease names as follows (I added numbers for reference):
+
+    1.  "aortic aneurysm, familial thoracic 3"
+    2.  "dyspnea, paroxysmal"
+    3.  "cystic medial necrosis of aorta"
+    4.  "aortic valve insufficiency"
+    5.  "coronary artery disease"
+    6.  "hyperlipoproteinemia type iia"
+    7.  "cutis marmorata"
+    8.  "atherosclerosis"
+    9.  "loeys-dietz aortic aneurysm syndrome"
+    10. "hyperlipidemia"
+    11. "hypercholesterolemia"
+    12. "left-sided heart failure"
+    13. "hypercholesterolemia, familial"
+    14. "coronary heart disease"
+
+I believe that the gene that associates the diseases in this community is at
+least partially responsible for the strength of the tissue of the aorta (the 
+main artery that carries blood away from the heart).
+We can connect several diseases on the list to weak tissue in the aorta.
+Disease (1) from the list is caused by a *"weakened and stretched" aorta.
+This connects to disease (2) in an unexpected way. Disease (2) is characterized
+by **"severe shortness of breath". The shortness of breath is not due to a lung
+issue, but actually with the amount of oxygen that being delivered by blood.
+The widened aorta means that blood cannot be pumped efficiently, which causes
+a lack of oxygenated blood throughout the body. Moving on to disease (4) we
+find the primary cause to be ***"aortic root dilation", which is tied to the
+aortic tissue being stretched, which is similar to both diseases we've looked
+at thus far. Another good example comes from disease (12), which is
+***"characterized by the heart's inability to pump an adequate supply of blood
+to the body". Once again, weak aortic tissue seems to be the root cause here,
+because a dilated aorta would cause the heart to have to work too hard to pump
+blood to the body, which would result in failure.
+Our research has shown that many of these diseases are strongly tied to a
+dilated aorta, which can result from weak aortic tissue. For this reason, I
+hyphothesize that the gene connecting my chosen community is likely related to
+weak aortic tissue.
+
+References:
+*   https://ghr.nlm.nih.gov/condition/familial-thoracic-aortic-aneurysm-and-dissection
+**  https://en.wikipedia.org/wiki/Paroxysmal_nocturnal_dyspnoea
+*** https://www.healthline.com/health/heart-failure
